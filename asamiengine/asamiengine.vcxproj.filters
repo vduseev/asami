@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{0ce60258-f8d3-4ea0-a35b-0246b4c4a92c}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{2f76e6ec-6ee0-4c3b-ae2b-f503be869eec}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{1502cc96-c66d-41cf-8be4-cbcabe2b9084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{da7713eb-e07d-44b4-9438-59834a5675a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\VertexTypes">
+      <UniqueIdentifier>{10b4809e-1581-4350-9fd1-95b203f38fe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scenes">
+      <UniqueIdentifier>{c85915f8-7cb0-4365-a4b1-e3a6e6b1d784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\BasicObjects">
+      <UniqueIdentifier>{6e795144-500a-4698-8a99-9fb7218a0b82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core">
+      <UniqueIdentifier>{6722599b-8af1-45f8-addd-d2b55f4c95b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Camera">
+      <UniqueIdentifier>{8dabdf97-a75d-4439-a8a0-9fc8c03b9a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\AbstractLight">
+      <UniqueIdentifier>{a30971a0-7791-4666-91b6-a5ca6ed2f01b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Texture">
+      <UniqueIdentifier>{edda5981-5031-4cce-b07c-4ba9f658e456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Material">
+      <UniqueIdentifier>{bc023b6d-7d04-4d83-918b-7af29b207254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Geometry">
+      <UniqueIdentifier>{40bb08f7-7f78-4469-9231-c97f9e93b46f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\AbstractScene">
+      <UniqueIdentifier>{664c259c-6559-4b6e-951e-0a753942d911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Lights">
+      <UniqueIdentifier>{89f89851-c68c-4850-b488-d634830a9ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Basic">
+      <UniqueIdentifier>{1514c574-aa13-4935-9dd1-828afc73cf54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Node">
+      <UniqueIdentifier>{9535cbe6-3968-4cf5-b8de-e91923bc23e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\AbstractObject">
+      <UniqueIdentifier>{dd895829-0b50-4bd5-a5d0-a555fa0a13a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compiled\intermediate\qt\Debug\moc_aopenglwindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compiled\intermediate\qt\Release\moc_aopenglwindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="aopenglwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compiled\intermediate\qt\Debug\moc_acamera.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compiled\intermediate\qt\Release\moc_acamera.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="aloadingscreen.cpp">
+      <Filter>Engine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="adirectionallight.cpp">
+      <Filter>Engine\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="acamera.cpp">
+      <Filter>Engine\Core\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="aobject3D.cpp">
+      <Filter>Engine\Core\AbstractObject</Filter>
+    </ClCompile>
+    <ClCompile Include="aabstractlight.cpp">
+      <Filter>Engine\Core\AbstractLight</Filter>
+    </ClCompile>
+    <ClCompile Include="asampler.cpp">
+      <Filter>Engine\Core\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="atexture.cpp">
+      <Filter>Engine\Core\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="atextureunit.cpp">
+      <Filter>Engine\Core\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="amaterial.cpp">
+      <Filter>Engine\Core\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="ageometry.cpp">
+      <Filter>Engine\Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="aabstractscene.cpp">
+      <Filter>Engine\Core\AbstractScene</Filter>
+    </ClCompile>
+    <ClCompile Include="anode.cpp">
+      <Filter>Engine\Core\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compiled\intermediate\qt\Debug\moc_aabstractscene.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compiled\intermediate\qt\Release\moc_aabstractscene.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="avertexattribute.cpp">
+      <Filter>Engine\Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compiled\intermediate\qt\Debug\moc_atestscene.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compiled\intermediate\qt\Release\moc_atestscene.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="atestscene.cpp">
+      <Filter>Engine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="atexturedquad.cpp">
+      <Filter>Engine\BasicObjects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="aopenglwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="acamera.h">
+      <Filter>Engine\Core\Camera</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aobject3D.h">
+      <Filter>Engine\Core\AbstractObject</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aabstractscene.h">
+      <Filter>Engine\Core\AbstractScene</Filter>
+    </CustomBuild>
+    <CustomBuild Include="atestscene.h">
+      <Filter>Engine\Scenes</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aabstractvertex.h">
+      <Filter>Engine\VertexTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="asimpletexturevertex.h">
+      <Filter>Engine\VertexTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="aloadingscreen.h">
+      <Filter>Engine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="adirectionallight.h">
+      <Filter>Engine\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="acamera_p.h">
+      <Filter>Engine\Core\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="aobject3Dset.h">
+      <Filter>Engine\Core\AbstractObject</Filter>
+    </ClInclude>
+    <ClInclude Include="aabstractlight.h">
+      <Filter>Engine\Core\AbstractLight</Filter>
+    </ClInclude>
+    <ClInclude Include="atexture.h">
+      <Filter>Engine\Core\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="atextureunit.h">
+      <Filter>Engine\Core\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="asampler.h">
+      <Filter>Engine\Core\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="amaterial.h">
+      <Filter>Engine\Core\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="ageometry.h">
+      <Filter>Engine\Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="anode.h">
+      <Filter>Engine\Core\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="anodeset.h">
+      <Filter>Engine\Core\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="alight3Dset.h">
+      <Filter>Engine\Core\AbstractLight</Filter>
+    </ClInclude>
+    <ClInclude Include="avertexattribute.h">
+      <Filter>Engine\Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="atexturedquad.h">
+      <Filter>Engine\BasicObjects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\basic\textured_quad.frag">
+      <Filter>Shaders\Basic</Filter>
+    </None>
+    <None Include="shaders\basic\textured_quad.vert">
+      <Filter>Shaders\Basic</Filter>
+    </None>
+  </ItemGroup>
+</Project>
