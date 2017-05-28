@@ -10,10 +10,10 @@ ANode::~ANode()
 
 void ANode::compute( const QMatrix4x4& parentMatrix )
 {
-	m_computedMatrix = parentMatrix * matrix();
+    m_computedMatrix = parentMatrix * matrix();
 }
 
 void ANode::computeRotation( const QMatrix4x4& parentRotationMatrix )
 {
-	m_computedRotationMatrix = parentRotationMatrix * m_rotation;
+    m_computedRotationMatrix = parentRotationMatrix * m_rotation;
 }
