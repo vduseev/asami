@@ -6,7 +6,7 @@
 class AAbstractVertex
 {
 public:
-	virtual int size() { return 0; }
+    virtual int size() { return 0; }
 };
 
 #endif
