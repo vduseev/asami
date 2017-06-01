@@ -54,7 +54,8 @@ public:
     QVector3D m_upVector;
     QVector3D m_viewCenter;
 
-    QVector3D m_cameraToCenter; // The vector from the camera position to the view center
+    // The vector from the camera position to the view center
+    QVector3D m_cameraToCenter;
 
     ACamera::ProjectionType m_projectionType;
 
@@ -69,12 +70,12 @@ public:
     float m_bottom;
     float m_top;
 
-	float m_xMinClip;
-	float m_xMaxClip;
-	float m_yMinClip;
-	float m_yMaxClip;
-	float m_zMinClip;
-	float m_zMaxClip;
+    float m_xMinClip;
+    float m_xMaxClip;
+    float m_yMinClip;
+    float m_yMaxClip;
+    float m_zMinClip;
+    float m_zMaxClip;
 
     mutable QMatrix4x4 m_viewMatrix;
     mutable QMatrix4x4 m_projectionMatrix;
