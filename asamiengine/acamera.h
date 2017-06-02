@@ -84,11 +84,11 @@ public:
 
     void setTop( const float& top );
     float top() const;
-	
-	void setClipSpace( 
-		const float& xMin, const float& xMax, 
-		const float& yMin, const float& yMax,
-		const float& zMin, const float& zMax );
+
+    void setClipSpace(
+    const float& xMin, const float& xMax,
+    const float& yMin, const float& yMax,
+    const float& zMin, const float& zMax );
 
     QMatrix4x4 viewMatrix() const;
     QMatrix4x4 projectionMatrix() const;
@@ -110,8 +110,8 @@ public slots:
     // Translate relative to world axes
     void translateWorld( const QVector3D& vWorld, CameraTranslationOption option = TranslateViewCenter );
 
-	// Clip camera position according to clip space
-	void clip();
+    // Clip camera position according to clip space
+    void clip();
 
     void tilt( const float& angle );
     void pan( const float& angle );
