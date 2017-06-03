@@ -1,9 +1,9 @@
 #include "adirectionallight.h"
 
 ADirectionalLight::ADirectionalLight()
-	: AAbstractLight()
+    : AAbstractLight()
 {
-	m_type = Directional;
+    m_type = Directional;
 }
 
 ADirectionalLight::~ADirectionalLight()
@@ -12,5 +12,5 @@ ADirectionalLight::~ADirectionalLight()
 
 void ADirectionalLight::setDirection( QVector3D direction )
 {
-	m_direction = direction.normalized();
+    m_direction = direction.normalized();
 }
