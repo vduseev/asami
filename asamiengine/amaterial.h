@@ -15,22 +15,20 @@ class AMaterial : protected QOpenGLFunctions_4_0_Core
 {
 public:
     AMaterial();
-	~AMaterial();
+    ~AMaterial();
 
-	struct {
-		QVector4D	Color;
-		// #intensity - does material absorb light ( 'yes' if equals 0 )
-		float		ShiningIntensity;
-		// #power - how powerfully it shines
-		float		ShiningPower;
-		
-		bool		Lightable;
-
-		bool		Textured;
-	} Properties;
+    struct {
+        QVector4D Color;
+        // #intensity - does material absorb light ( 'yes' if equals 0 )
+        float   ShiningIntensity;
+        // #power - how powerfully it shines
+        float ShiningPower;
+        bool Lightable;
+        bool Textured;
+    } Properties;
 
     void bind();
-	void release();
+    void release();
 
     void setShaders( const QString& vertexShader,
                      const QString& fragmentShader );
