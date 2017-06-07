@@ -3,11 +3,11 @@
 AMaterial::AMaterial()
     : m_shader( new QOpenGLShaderProgram )
 {
-	Properties.Color = QVector4D( 1, 0, 0, 1 );
-	Properties.ShiningIntensity = 0.1f;
-	Properties.ShiningPower = 1;
-	Properties.Lightable = true;
-	Properties.Textured = true;
+    Properties.Color = QVector4D( 1, 0, 0, 1 );
+    Properties.ShiningIntensity = 0.1f;
+    Properties.ShiningPower = 1;
+    Properties.Lightable = true;
+    Properties.Textured = true;
     initializeOpenGLFunctions();
 }
 
@@ -20,45 +20,45 @@ void AMaterial::bind()
 {
     m_shader->bind();
 
-	if ( Properties.Textured && m_units.count() > 0 )
-	{
-		foreach ( const GLuint unit, m_units.keys() )
-		{
-			const ATextureUnit& textureImageUnit = m_units.value( unit );
+    if ( Properties.Textured && m_units.count() > 0 )
+    {
+        foreach ( const GLuint unit, m_units.keys() )
+        {
+            const ATextureUnit& textureImageUnit = m_units.value( unit );
 
-			// Bind the texture
-			glActiveTexture( GL_TEXTURE0 + unit );
-			textureImageUnit.texture()->bind();
+            // Bind the texture
+            glActiveTexture( GL_TEXTURE0 + unit );
+            textureImageUnit.texture()->bind();
 
-			// Bind the sampler
-			textureImageUnit.sampler()->bind( unit );
+            // Bind the sampler
+            textureImageUnit.sampler()->bind( unit );
 
-			// Associate with sampler uniform in shader (if we know the name)
-			if ( m_uniformNames.contains( unit ) )
-				m_shader->setUniformValue( m_uniformNames.value( unit ).constData(), unit );
-		}
-	}
+            // Associate with sampler uniform in shader (if we know the name)
+            if ( m_uniformNames.contains( unit ) )
+                m_shader->setUniformValue( m_uniformNames.value( unit ).constData(), unit );
+        }
+    }
 
-	if ( Properties.Lightable )
-	{		
-		m_shader->setUniformValue( "matShiningInten", Properties.ShiningIntensity );
-		m_shader->setUniformValue( "matShiningPower", Properties.ShiningPower );
-	}
+    if ( Properties.Lightable )
+    {
+        m_shader->setUniformValue( "matShiningInten", Properties.ShiningIntensity );
+        m_shader->setUniformValue( "matShiningPower", Properties.ShiningPower );
+    }
 }
 
 void AMaterial::release()
 {
-	m_shader->release();
+    m_shader->release();
 
-	if ( m_units.count() > 0 )
-	{
-		foreach ( const GLuint unit, m_units.keys() )
-		{
-			const ATextureUnit& textureImageUnit = m_units.value( unit );
-			textureImageUnit.texture()->release();
-			textureImageUnit.sampler()->release( unit );
-		}
-	}
+    if ( m_units.count() > 0 )
+    {
+        foreach ( const GLuint unit, m_units.keys() )
+        {
+            const ATextureUnit& textureImageUnit = m_units.value( unit );
+            textureImageUnit.texture()->release();
+            textureImageUnit.sampler()->release( unit );
+        }
+    }
 }
 
 void AMaterial::setShaders( const QString& vertexShader,
