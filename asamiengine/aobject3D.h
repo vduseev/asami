@@ -25,7 +25,8 @@ public:
         const QMatrix4x4& projectionMatrix,
         const QMatrix4x4& viewMatrix,
         const QVector3D& cameraPosition,
-        const ALight3DSet& lights );
+        const ALight3DSet& lights
+    );
 
     void scale( float x, float y, float z ) { m_localScale.scale( x, y, z ); }
     void scale( const QVector3D& vector )   { m_localScale.scale( vector ); }
