@@ -39,13 +39,13 @@ void AObject3D::draw(
     QMatrix4x4 nodeMatrix, nodeRotationMatrix;
     if ( m_isAssociated )
     {
-        nodeMatrix            = m_associatedNode->computedMatrix();
-        nodeRotationMatrix    = m_associatedNode->computedRotationMatrix();
+        nodeMatrix = m_associatedNode->computedMatrix();
+        nodeRotationMatrix = m_associatedNode->computedRotationMatrix();
     }
-    QMatrix4x4 local    = m_localTranslation * m_localRotation * m_localScale;
-    QMatrix4x4 world    = local;
-    //QMatrix4x4 rotationMatrix    = nodeRotationMatrix * m_localRotation;
-    QMatrix4x4 WVP    = projection * view * local;
+    QMatrix4x4 local = m_localTranslation * m_localRotation * m_localScale;
+    QMatrix4x4 world = local;
+    //QMatrix4x4 rotationMatrix = nodeRotationMatrix * m_localRotation;
+    QMatrix4x4 WVP = projection * view * local;
 
     // bind vertex buffer
     QOpenGLBuffer* vertexBuffer = m_geometry->vertexBuffer();
@@ -66,7 +66,8 @@ void AObject3D::draw(
             attribute->type(),
             attribute->offset(),
             attribute->tupleSize(),
-            attribute->stride() );
+            attribute->stride()
+        );
         shader->enableAttributeArray( attribute->name() );
     }
 
