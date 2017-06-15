@@ -10,9 +10,9 @@
 class APosTextNormVertex : public AAbstractVertex
 {
 public:
-	QVector3D position;
-	QVector3D normal;
-	QVector2D textCoord;
+    QVector3D position;
+    QVector3D normal;
+    QVector2D textCoord;
 };
 
 #endif
