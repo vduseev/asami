@@ -6,7 +6,7 @@
 class ASampler : protected QOpenGLFunctions_4_0_Core
 {
 public:
-	ASampler(void);
+    ASampler(void);
 
     void create();
     void destroy();
@@ -26,7 +26,7 @@ public:
     void setMinificationFilter( GLenum filter );
     void setMagnificationFilter( GLenum filter );
 
-	void setSamplerParameterF( GLenum parameterName, GLfloat param );
+    void setSamplerParameterF( GLenum parameterName, GLfloat param );
 
 private:
     GLuint m_samplerId;
