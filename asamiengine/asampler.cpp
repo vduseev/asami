@@ -2,7 +2,7 @@
 
 ASampler::ASampler()
 {
-	initializeOpenGLFunctions();
+    initializeOpenGLFunctions();
 }
 
 void ASampler::create()
@@ -46,5 +46,5 @@ void ASampler::setMagnificationFilter( GLenum filter )
 
 void ASampler::setSamplerParameterF( GLenum parameterName, GLfloat param )
 {
-	glSamplerParameterf( m_samplerId, parameterName, param );
+    glSamplerParameterf( m_samplerId, parameterName, param );
 }
