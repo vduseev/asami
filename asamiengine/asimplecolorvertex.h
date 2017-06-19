@@ -8,10 +8,9 @@
 
 class ASimpleColorVertex : public AAbstractVertex
 {
-public:	
-	QVector3D coordinate;
-	QVector3D color;
+public:
+    QVector3D coordinate;
+    QVector3D color;
 };
 
 #endif
-
