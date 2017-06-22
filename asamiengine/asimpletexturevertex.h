@@ -8,16 +8,16 @@
 
 class ASimpleTextureVertex : public AAbstractVertex
 {
-public:	
-	QVector3D position;
-	QVector3D normal;
-	QVector2D texCoords;
+public:
+    QVector3D position;
+    QVector3D normal;
+    QVector2D texCoords;
 
-	int size() { return 
-		sizeof( QVector3D ) + 
-		sizeof( QVector3D ) + 
-		sizeof( QVector2D ); 
-	}
+    int size() { return
+        sizeof( QVector3D ) +
+        sizeof( QVector3D ) +
+        sizeof( QVector2D );
+    }
 };
 
 #endif
