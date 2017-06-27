@@ -13,12 +13,14 @@ public:
     ATexturedQuad( QSize textureCoordinates = QSize( 1, 1 ) );
     ATexturedQuad(
         const QString& textureFileName,
-        QSize textureCoordinates = QSize( 1, 1 ) );
+        QSize textureCoordinates = QSize( 1, 1 )
+    );
     ATexturedQuad(
         const QString& textureFileName,
         const QString& vertexShader,
         const QString& fragmentShader,
-        QSize textureCoordinates = QSize( 1, 1 ) );
+        QSize textureCoordinates = QSize( 1, 1 )
+    );
     ~ATexturedQuad();
 
     class Vertex
@@ -34,7 +36,8 @@ private:
     void prepareMaterial(
         const QString& textureFileName,
         const QString& vertexShader,
-        const QString& fragmentShader );
+        const QString& fragmentShader
+    );
 };
 
 #endif
