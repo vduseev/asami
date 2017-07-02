@@ -131,17 +131,20 @@ void ATexturedQuad::prepareGeometry( QSize textureCoordinates )
     AVertexAttribute* positionAttribute = new AVertexAttribute(
         QByteArrayLiteral( "v_pos" ),
         GL_FLOAT, 0,
-        3, size );
+        3, size
+    );
 
     AVertexAttribute* normalAttribute = new AVertexAttribute(
         QByteArrayLiteral( "v_norm" ),
         GL_FLOAT, sizeof( QVector3D ),
-        3, size );
+        3, size
+    );
 
     AVertexAttribute* textureAttribute = new AVertexAttribute(
         QByteArrayLiteral( "v_texCoords" ),
         GL_FLOAT, sizeof( QVector3D ) + sizeof( QVector3D ),
-        3, size );
+        3, size
+    );
 
     geometry->setVertexAttribute( positionAttribute );
     geometry->setVertexAttribute( normalAttribute );
