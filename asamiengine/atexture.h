@@ -7,7 +7,7 @@
 class ATexture : protected QOpenGLFunctions_4_0_Core
 {
 public:
-	enum TextureType
+    enum TextureType
     {
         Texture1D      = GL_TEXTURE_1D,
         Texture2D      = GL_TEXTURE_2D,
@@ -26,7 +26,7 @@ public:
     void bind();
     void release();
 
-	void activeTexture( GLenum texture );
+    void activeTexture( GLenum texture );
     void initializeToEmpty( const QSize& size );
     void setImage( const QImage& image );
     void setCubeMapImage( GLenum face, const QImage& image );
@@ -35,7 +35,7 @@ public:
                        GLenum format, GLenum type, const void* data );
 
     void generateMipMaps();
-	static QImage convertToGLFormat(const QImage& img);
+    static QImage convertToGLFormat(const QImage& img);
 
 private:
 
